@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Committee Dashboard</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- CSS FILE -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <h2>CommitteeFlow</h2>
+
+                <button id="menuBtn">☰</button>
+
+            </div>
+
+            <ul>
+
+                <li class="active">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Dashboard
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-users"></i>
+                    Members
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-money-bill"></i>
+                    Payments
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-file"></i>
+                    Reports
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="content">
+
+            <!-- TOPBAR -->
+
+            <div class="topbar">
+
+                <h2>Dashboard</h2>
+
+                <div class="topbar-right">
+
+                    <input 
+                    type="text" 
+                    placeholder="Search..." 
+                    class="top-search">
+
+                    <button id="themeToggle">🌙</button>
+
+                    <i class="fa-solid fa-bell notification"></i>
+
+                    <div class="profile">
+                        <p>Kanishka</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- DASHBOARD CARDS -->
+
+            <div class="dashboard-cards">
+
+                <div class="card card1">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <h3>Total Members</h3>
+
+                    <p>120</p>
+
+                </div>
+
+                <div class="card card2">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    <h3>Total Collections</h3>
+
+                    <p>₹1,20,000</p>
+
+                </div>
+
+                <div class="card card3">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h3>Pending Payments</h3>
+
+                    <p>18</p>
+
+                </div>
+
+                <div class="card card4">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <h3>Active Committees</h3>
+
+                    <p>6</p>
+
+                </div>
+
+            </div>
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="quick-actions">
+
+                <button>+ Add Payment</button>
+
+                <button>+ Create Committee</button>
+
+                <button>Generate Report</button>
+
+            </div>
+
+            <!-- MEMBER FORM -->
+
+            <div class="member-form">
+
+                <h2>Add Member</h2>
+
+                <form>
+
+                    <input type="text" placeholder="Member Name">
+
+                    <input type="number" placeholder="Phone Number">
+
+                    <input
+                    type="text"
+                    placeholder="Search members..."
+                    class="search-bar">
+
+                    <button type="button">
+                        Add Member
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- PAYMENT TABLE -->
+
+            <div class="payment-table">
+
+                <h2>Recent Payments</h2>
+
+                <table>
+
+                    <tr>
+
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Rahul</td>
+                        <td>₹5000</td>
+                        <td><span class="paid">Paid</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Aman</td>
+                        <td>₹3000</td>
+                        <td><span class="pending">Pending</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Priya</td>
+                        <td>₹7000</td>
+                        <td><span class="paid">Paid</span></td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- RECENT ACTIVITY -->
+
+            <div class="activity-section">
+
+                <h2>Recent Activity</h2>
+
+                <div class="activity-card">
+                    Rahul paid ₹5000
+                </div>
+
+                <div class="activity-card">
+                    Aman payment pending
+                </div>
+
+                <div class="activity-card">
+                    Priya joined new committee
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
